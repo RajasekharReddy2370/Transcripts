@@ -3,7 +3,7 @@ import random
 from pydub import AudioSegment, silence
 from pydub.silence import detect_silence
 
-clip_location = '/home/rajashekar/Music/1721730376_sirisha.aup3'
+clip_location = '/Users/c360/Desktop/voices/import/prabhakar voice.wav'
 
 clip = AudioSegment.from_wav(clip_location)
 
@@ -19,4 +19,4 @@ for cut in all_clips:
     # elif cut.duration_seconds > 2:
     #     cuts_at_silence += cut
 
-processed_clip.export('/home/rajashekar/Music/main/English_preprocessed_files/preprocessed_part_6.wav', 'wav', )
+processed_clip.export('/Users/c360/Desktop/voices/prabhakar_sample_clip_cuttings/preprocessed_part_6.wav', 'wav', )
